@@ -1,0 +1,72 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Outfit', sans-serif;
+   color: hsl(215, 51%, 70%);
+}
+body {
+   min-height: 100vh;
+   font-size: 16px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+   background-color: hsl(217, 54%, 11%);
+}
+.card {
+   margin: auto;
+   width: 325px;
+   background-color: hsl(216, 50%, 16%);
+   padding: 25px;
+   border-radius: 10px;
+}
+.title, .author span {
+   color: white;
+}
+.title {
+   line-height: 2.5em;
+}
+.nft {
+   width: 280px;
+   border-radius: 10px;
+}
+hr { border: 1px solid hsl(215, 32%, 27%);}
+.info {
+   display: flex;
+   justify-content: space-between;
+}
+.price, .time {
+   display: flex;
+   margin: 20px 0;
+}
+.price img, .time img {
+   margin-right: 10px;
+}
+.price figcaption {
+   color: hsl(178, 100%, 50%);
+}
+.author {
+   display: flex;
+   margin-top: 20px;
+   align-items: center;
+}
+.author img {
+   width: 32px;
+   border: 1px solid white;
+   border-radius: 50%;
+   margin-right: 10px;
+}
+
+.attribution {
+   font-size: 10px;
+}
+.attribution a {
+   text-decoration: none;
+   color: hsl(178, 100%, 50%);
+   text-shadow: 
+   1px 1px 1px hsl(215, 51%, 70%),
+   1px -1px 1px hsl(215, 51%, 70%),
+   -1px 1px 1px hsl(215, 51%, 70%),
+   -1px -1px 1px hsl(215, 51%, 70%);
+}
