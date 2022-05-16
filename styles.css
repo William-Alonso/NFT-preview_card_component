@@ -4,34 +4,62 @@
    box-sizing: border-box;
    font-family: 'Outfit', sans-serif;
    color: hsl(215, 51%, 70%);
+   text-decoration: none;
 }
-body {
-   min-height: 100vh;
-   font-size: 16px;
-   display: flex;
-   flex-direction: column;
-   justify-content: space-between;
-   align-items: center;
+
+.modal {
    background-color: hsl(217, 54%, 11%);
+   width: 100%;
+   min-height: 100vh;
+   display: flex;
 }
+
 .card {
-   margin: auto;
-   width: 325px;
    background-color: hsl(216, 50%, 16%);
+   width: 330px;
+   height: 545px;
+   position: relative;
+   margin: auto;
    padding: 25px;
    border-radius: 10px;
 }
-.title, .author span {
-   color: white;
+.image {
+   width: 280px;
+   height: 280px;
+}
+.hover, .fix {
+   position: absolute;
+   cursor: pointer;
+}
+.fix, .nft, .hover {
+   width: 280px;
+   height: 280px;
+   border-radius: 10px;
+}
+.hover {
+   background-color: hsla(178, 100%, 50%, 0.5);
+}
+.view {
+   position: relative;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+.image:hover > .hover {
+   z-index: 5;
+}
+
+.title, .author a {
+   color: hsl(0, 0%, 100%);
 }
 .title {
    line-height: 2.5em;
 }
-.nft {
-   width: 280px;
-   border-radius: 10px;
+.title:hover, .author a:hover {
+   cursor: pointer;
+   color: hsl(178, 100%, 50%);
 }
-hr { border: 1px solid hsl(215, 32%, 27%);}
+
 .info {
    display: flex;
    justify-content: space-between;
@@ -46,6 +74,11 @@ hr { border: 1px solid hsl(215, 32%, 27%);}
 .price figcaption {
    color: hsl(178, 100%, 50%);
 }
+
+hr { 
+   border: 1px solid hsl(215, 32%, 27%);
+}
+
 .author {
    display: flex;
    margin-top: 20px;
@@ -56,17 +89,4 @@ hr { border: 1px solid hsl(215, 32%, 27%);}
    border: 1px solid white;
    border-radius: 50%;
    margin-right: 10px;
-}
-
-.attribution {
-   font-size: 10px;
-}
-.attribution a {
-   text-decoration: none;
-   color: hsl(178, 100%, 50%);
-   text-shadow: 
-   1px 1px 1px hsl(215, 51%, 70%),
-   1px -1px 1px hsl(215, 51%, 70%),
-   -1px 1px 1px hsl(215, 51%, 70%),
-   -1px -1px 1px hsl(215, 51%, 70%);
 }
