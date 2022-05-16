@@ -3,50 +3,51 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-
-  <link rel="icon" type="image/png" sizes="32x32" href="https://raw.githubusercontent.com/William-Alonso/NFT-preview_card_component/img/favicon-32x32.png">
-  
   <title>Frontend Mentor | NFT preview card component</title>
 
+  <meta name="description" content="Frontend Mentor challenge: an NFT preview card component made from a preset design.">
+  <meta name="author" content="William Alonso">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="styles.css">
 
 </head>
 <body>
-  <div class="card">
-    <img src="https://raw.githubusercontent.com/William-Alonso/NFT-preview_card_component/img/image-equilibrium.jpg" alt="NFT image" class="nft">
-    <h2 class="title">Equilibrium #3429</h2>
-    <p class="slogan">Our Equilibrium collection promotes balance and calm.</p>
-    
-    <div class="info">
+  <section class="modal">
+    <div class="card">
+      <div class="image" id="nft-image">
+        <div class="hover">
+          <img class="view" src="/images/icon-view.svg" alt="View Icon">
+        </div>
+        <div class="fix">
+          <img class="nft" src="/images/image-equilibrium.jpg" alt="Equilibium Image">
+        </div>        
+      </div>
 
-      <figure class="price">
-        <img src="https://raw.githubusercontent.com/William-Alonso/NFT-preview_card_component/img/icon-ethereum.svg" alt="Ethereum icon">
-        <figcaption>0.041 ETH</figcaption>
+      <h2 class="title" id ="nft-title">Equilibrium #3429</h2>
+      <p class="slogan">Our Equilibrium collection promotes balance and calm.</p>
+      
+      <div class="info">
+        <figure class="price">
+          <img src="/images/icon-ethereum.svg" alt="Ethereum icon">
+          <figcaption>0.041 ETH</figcaption>
+        </figure>
+        <figure class="time">
+          <img src="/images/icon-clock.svg" alt="Clock icon">
+          <figcaption>3 days left</figcaption>
+        </figure>
+      </div>
+      
+      <hr class="line">
+      
+      <figure class="author"> 
+        <img src="/images/image-avatar.png" alt="Author">
+        <figcaption>Creation of <a href="#">Jules Wyvern</a></figcaption>
       </figure>
-
-      <figure class="time">
-        <img src="https://raw.githubusercontent.com/William-Alonso/NFT-preview_card_component/img/icon-clock.svg" alt="Clock icon">
-        <figcaption>3 days left</figcaption>
-      </figure>
-
     </div>
-    
-    <hr class="line">
-    
-    <figure class="author">
-      <img src="https://raw.githubusercontent.com/William-Alonso/NFT-preview_card_component/img/image-avatar.png" alt="Author">
-      <figcaption>Creation of <span>Jules Wyvern</span></figcaption>
-    </figure>
-  </div>
-  
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Will Alonso</a>.
-  </div>
+  </section>
 </body>
 </html>
